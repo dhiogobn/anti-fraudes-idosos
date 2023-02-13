@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-button fill="clear" color="primary" routerLink="/gender"><ion-icon name="caret-back-outline" size="large"></ion-icon><b style="padding-left: 5px;">Voltar</b></ion-button>
+      <ion-title class="ion-text-justify">Bank</ion-title>
+    </ion-row>
+  </ion-grid>
+</ion-header>
+
+<ion-content color="success">
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let question of questions">
+      <ion-card>
+        <img alt="Silhouette of mountains" src="https://t.ctcdn.com.br/QVXKxntvtzCJjva558nHTcctVMg=/512x288/smart/filters:format(webp)/i514554.png" />
+        <ion-card-header>
+          <ion-card-title>{{question.text}}</ion-card-title>
+          <ion-card-subtitle></ion-card-subtitle>
+        </ion-card-header>
+      
+        <ion-card-content>
+          <ion-radio-group [allowEmptySelection]="false" value="d">
+            <ion-item>
+              <ion-label>asdiopjasiodasnidnioasn</ion-label>
+              <ion-radio slot="end" value="a"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Cats</ion-label> 
+              <ion-radio slot="end" value="b"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Turtles</ion-label>
+              <ion-radio slot="end" value="c"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <ion-label>Fish</ion-label>
+              <ion-radio slot="end" value="d"></ion-radio>
+            </ion-item>
+            <ion-item>
+              <ion-label>Pig</ion-label>
+              <ion-radio slot="end" value="e"></ion-radio>
+            </ion-item>
+          </ion-radio-group>
+          <ion-button color="success" style="margin-top: 10px;">Confirmar</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

@@ -4,7 +4,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
 }
 
@@ -24,4 +24,21 @@
 
 #container a {
   text-decoration: none;
+}
+
+.password-screen {
+  margin-top: 82%;
+  width: 90%;
+  margin-left: 5%;
+  
+}
+
+.login-screen {
+  width: 90%;
+  margin-left: 5%;
+  
+}
+
+.breakline {
+  word-break: break-all;
 }

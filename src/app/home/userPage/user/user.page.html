@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title style="float: left;">user</ion-title>
+    <ion-button routerLink="" style="float: right">Voltar</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="success">
+  <div>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Cadastro</ion-card-title>
+        <ion-card-subtitle>Insira os dados necessarios para o cadastro.</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">Login</ion-label>
+          <ion-input placeholder="Login" [(ngModel)]="login"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Confirmar senha</ion-label>
+          <ion-input type="password" placeholder="Senha" [(ngModel)]="confirmPassword"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input placeholder="Email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Nascimento</ion-label>
+          <ion-input placeholder="Nascimento" [(ngModel)]="birthDate"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Cidade</ion-label>
+          <ion-input placeholder="Cidade" [(ngModel)]="city"></ion-input>
+        </ion-item>        <ion-item>
+          <ion-label position="floating">Estado</ion-label>
+          <ion-input placeholder="Estado"  [(ngModel)]="state"></ion-input>
+        </ion-item>
+        <ion-button (click)="registrarUsuario()" style="margin-top: 10px; margin-left: 25%;">Cadastrar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
