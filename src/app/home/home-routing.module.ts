@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'social-questions',
     loadChildren: () => import('./genderPage/gender/social/social-questions/social-questions.module').then( m => m.SocialQuestionsPageModule)
+  },
+  {
+    path: 'wallet',
+    loadChildren: () => import('./walletPage/wallet/wallet.module').then( m => m.WalletPageModule)
   }
 ];
 

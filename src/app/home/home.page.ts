@@ -25,7 +25,7 @@ export class HomePage {
     for (let index = 0; index < this.users.length; index++) {
       if(this.users[index].login === this.login && this.users[index].password === this.password){
         this.isLogged = true
-        this.router.navigate(['gender'])
+        this.router.navigate([`user/${this.users[index].id}/gender`])
       }
     }
     if(!this.isLogged) {

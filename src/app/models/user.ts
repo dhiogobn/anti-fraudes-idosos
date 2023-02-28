@@ -1,3 +1,4 @@
+import { Wallet } from './Wallet';
 export class User {
    id: number;
    login: string;
@@ -6,8 +7,10 @@ export class User {
    birthDate: Date;
    city: string;
    state: string;
+   wallet: Wallet;
+   image: string;
 
-   constructor(id: number, login: string, password: string, email: string, birthdate: Date, city: string, state: string) {
+   constructor(id: number, login: string, password: string, email: string, birthdate: Date, city: string, state: string, wallet: Wallet, image: string) {
     this.id = id;
     this.login = login;
     this.password = password;
@@ -15,6 +18,8 @@ export class User {
     this.birthDate = birthdate;
     this.city = city;
     this.state = state;
+    this.wallet = wallet;
+    this.image = image;
    }
 
 }

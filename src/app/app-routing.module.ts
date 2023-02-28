@@ -1,3 +1,4 @@
+import { WalletPage } from './home/walletPage/wallet/wallet.page';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { BankQuestionPage } from './home/genderPage/gender/bank/bank-question/bank-question.page';
@@ -18,29 +19,33 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'user',
+    path: 'registry',
     component: UserPage
   },
   {
-    path: 'gender',
+    path: 'user/:id/gender',
     component: GenderPage
 
   },
   {
-    path: 'gender/bank',
+    path: 'user/:id/gender/bank',
     component: BankQuestionPage
   },
   {
-    path: 'gender/internet',
+    path: 'user/:id/gender/internet',
     component: InternetQuestionPage
   },
   {
-    path: 'gender/password',
+    path: 'user/:id/gender/password',
     component: PasswordsQuestionsPage
   },
   {
-    path: 'gender/social',
+    path: 'user/:id/gender/social',
     component: SocialQuestionsPage
+  },
+  {
+    path: 'user/:id/wallet',
+    component: WalletPage
   }
 ];
 
